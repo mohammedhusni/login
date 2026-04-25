@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="loginbox">
+        <h2>Log In </h2>
+        <form action="">
+            <div class="input-group">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="User Name" required> <br>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Password" required>
+
+            </div>
+            <button type="submit">Log In </button>
+
+        </form>
+        <p>Don't have an account? <a href="#">Sign Up</a></p>
+    </div>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+
+        }
+        body {
+            height: 100vh;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .loginbox {
+            background:white;
+            padding: 40px;
+            width: 320px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgb(1, 6, 27);
+        }
+        .loginbox h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .input-group {
+            position: relative;
+            margin-bottom: 18px;
+            
+        }
+        .input-group i {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            color: #777;
+            font-size: 14px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 12px 12px 12px 35px;
+            border: solid 1px #ccc ;
+            border-radius: 12px;
+            font-size: 14px;
+            
+
+        }
+        .input-group input:focus {
+            border-color: #667eea;
+            transition: 0.3s;
+            outline: none;
+        }
+        .loginbox button {
+            width: 100%;
+            padding: 5px;
+            background-color: #667eea;
+            color: white;
+            font-size: 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            
+
+        }
+        .loginbox button:hover {
+            background: none;
+            border: solid 1px #667eea;
+            color: #667eea;
+            transition: 0.7s ;
+        }
+        .loginbox p {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        .loginbox a {
+            color: #667eea;
+             text-decoration: none;
+        }
+        .loginbox a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+
+</body>
+
+</html>
